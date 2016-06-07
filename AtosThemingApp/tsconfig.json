@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "inlineSources": true,
+    "target": "es6"
+  },
+  "exclude": [
+    "typings/main",
+    "typings/main.d.ts"
+  ]
+}

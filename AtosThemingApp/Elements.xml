@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="RootModule">
+    <File Path="typings\browser\ambient\microsoft.ajax\index.d.ts" Url="typings/browser/ambient/microsoft.ajax/index.d.ts" ReplaceContent="TRUE" />
+    <File Path="Scripts\tsconfig.json" Url="Scripts/tsconfig.json" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

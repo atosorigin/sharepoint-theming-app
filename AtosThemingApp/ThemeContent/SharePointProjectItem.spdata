@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="ThemeContent\" Type="ElementManifest" />
+    <ProjectItemFile Source="css\atos.css" Target="ThemeContent\css\" Type="ElementFile" />
+    <ProjectItemFile Source="fonts\stag-medium-webfont.eot" Target="ThemeContent\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="fonts\stag-medium-webfont.ttf" Target="ThemeContent\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="fonts\stag-medium-webfont.woff" Target="ThemeContent\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="images\aeirial-view-of_traffic-and_overpasses.jpg" Target="ThemeContent\images\" Type="ElementFile" />
+    <ProjectItemFile Source="images\atos_logo.gif" Target="ThemeContent\images\" Type="ElementFile" />
+    <ProjectItemFile Source="images\baseline.png" Target="ThemeContent\images\" Type="ElementFile" />
+    <ProjectItemFile Source="images\grain-landscape.jpg" Target="ThemeContent\images\" Type="ElementFile" />
+    <ProjectItemFile Source="images\lifeguard-chair.jpg" Target="ThemeContent\images\" Type="ElementFile" />
+    <ProjectItemFile Source="images\man-walking-on-dessert-highway-1024.jpg" Target="ThemeContent\images\" Type="ElementFile" />
+    <ProjectItemFile Source="images\man-walking-on-dessert-highway.jpg" Target="ThemeContent\images\" Type="ElementFile" />
+    <ProjectItemFile Source="images\manchester.jpg" Target="ThemeContent\images\" Type="ElementFile" />
+    <ProjectItemFile Source="scripts\atos.js" Target="ThemeContent\scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="theme\Atos.spcolor" Target="ThemeContent\theme\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

@@ -1,0 +1,149 @@
+﻿/* --// general --// *//*** FONT ***/
+@font-face {
+   font-family: 'StagMedium';
+    src: url('fonts/stag-medium-webfont.eot');
+    src: url('fonts/stag-medium-webfont.eot?#iefix') 
+
+format('embedded-opentype'),
+         url('fonts/stag-medium-webfont.woff') format('woff'),
+         url('fonts/stag-medium-webfont.ttf') format('truetype'),
+         url('fonts/stag-medium-webfont.svg#StagMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'StagBook';
+    src: url('fonts/stag-book-webfont.eot');
+    src: url('fonts/stag-book-webfont.eot?#iefix') 
+
+format('embedded-opentype'),
+         url('fonts/stag-book-webfont.woff') format('woff'),
+         url('fonts/stag-book-webfont.ttf') format('truetype'),
+         url('fonts/stag-book-webfont.svg#StagBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+h1, h2 , h3, h4, .ms-h1, .ms-h2, .ms-h3, .ms-h4, .ms-headerFont
+{
+	font-family: StagMedium;
+}
+
+.ms-core-pageTitle, .ms-core-pageTitle a
+{
+	font-family: StagMedium;
+	font-weight: normal;
+}
+
+.ms-dlg-heading {
+	font-family: StagMedium;
+}
+
+.ms-navedit-editLinksText > span > .ms-metadata, .ms-core-listMenuEdit > tr > .ms-navedit-linkCell > .ms-core-listMenu-item
+{
+  font-family: StagMedium;
+}
+
+.ms-webpart-titleText.ms-webpart-titleText, .ms-webpart-titleText > a
+{
+	font-family: StagMedium;
+}
+
+.ms-core-listMenu-verticalBox > .ms-core-listMenu-root > li > .ms-core-listMenu-item, .ms-core-listMenu-verticalBox > .ms-core-listMenu-root > li > .ms-core-listMenuEdit, .ms-core-listMenu-heading, .ms-tv-header
+{
+	font-family: StagMedium;
+}
+
+.ms-breadcrumb-top .ms-core-navigation {
+	font-family: StagMedium;
+	font-size: 1.2em;
+}
+
+.ms-core-pageTitle, .ms-core-pageTitle a {
+	color: rgb(255,255,255);
+}
+
+.ms-breadcrumb-top .ms-core-listMenu-item, 
+.ms-breadcrumb-top .ms-core-listMenu-item:link, 
+.ms-breadcrumb-top .ms-core-listMenu-item:visited
+{
+	color: rgb(200,200,200);
+}
+
+.ms-breadcrumb-top .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link, 
+.ms-breadcrumb-top .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:visited, 
+.ms-breadcrumb-top .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected {
+	color: rgb(255,255,255);
+	font-weight: normal;
+}
+
+#siteIcon {
+	margin-top: 7px;
+	margin-right: 60px;
+}
+
+.ms-breadcrumb-box {
+	padding-right: 40px;
+}
+
+.ms-breadcrumb-top {
+	width: 100%;
+	background-color: rgb(64,64,64);
+	padding: 5px 20px;
+}
+
+h1#pageTitle {
+	width: 100%;
+	background-color: rgb(0, 102, 161);
+	padding: 10px 20px;
+
+	color: rgb(255,255,255);
+	font-size: 21px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+#sideNavBox {
+	background-color: rgba(255, 255, 255, 0.8);
+	
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 20px;
+}
+
+#sideNavBox .ms-core-listMenu-selected {
+	font-weight: normal;
+}
+
+#contentBox {
+	background-color: white;
+	
+	margin-right: 0px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+#contentRow {
+	padding-top: 0px;
+}
+
+#s4-titlerow {
+	background-color: rgb(255, 255, 255);
+	padding-bottom: 19px;
+}
+
+#DeltaPlaceHolderMain {
+	margin-left: 20px;
+}
+
+.ms-webpart-chrome-title > span > h2
+{
+	border-bottom: 3px solid black;
+}
+
+.ms-microfeed-siteFeedTitleArea > h2
+{
+	border-bottom: 3px solid black;
+}

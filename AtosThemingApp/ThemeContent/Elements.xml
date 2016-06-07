@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="ThemeContent">
+    <File Path="ThemeContent\css\atos.css" Url="ThemeContent/css/atos.css" ReplaceContent="TRUE" />
+    <File Path="ThemeContent\fonts\stag-medium-webfont.eot" Url="ThemeContent/fonts/stag-medium-webfont.eot" ReplaceContent="TRUE" />
+    <File Path="ThemeContent\fonts\stag-medium-webfont.ttf" Url="ThemeContent/fonts/stag-medium-webfont.ttf" ReplaceContent="TRUE" />
+    <File Path="ThemeContent\fonts\stag-medium-webfont.woff" Url="ThemeContent/fonts/stag-medium-webfont.woff" ReplaceContent="TRUE" />
+    <File Path="ThemeContent\images\aeirial-view-of_traffic-and_overpasses.jpg" Url="ThemeContent/images/aeirial-view-of_traffic-and_overpasses.jpg" ReplaceContent="TRUE" />
+    <File Path="ThemeContent\images\atos_logo.gif" Url="ThemeContent/images/atos_logo.gif" ReplaceContent="TRUE" />
+    <File Path="ThemeContent\images\baseline.png" Url="ThemeContent/images/baseline.png" ReplaceContent="TRUE" />
+    <File Path="ThemeContent\images\grain-landscape.jpg" Url="ThemeContent/images/grain-landscape.jpg" ReplaceContent="TRUE" />
+    <File Path="ThemeContent\images\lifeguard-chair.jpg" Url="ThemeContent/images/lifeguard-chair.jpg" ReplaceContent="TRUE" />
+    <File Path="ThemeContent\images\man-walking-on-dessert-highway-1024.jpg" Url="ThemeContent/images/man-walking-on-dessert-highway-1024.jpg" ReplaceContent="TRUE" />
+    <File Path="ThemeContent\images\man-walking-on-dessert-highway.jpg" Url="ThemeContent/images/man-walking-on-dessert-highway.jpg" ReplaceContent="TRUE" />
+    <File Path="ThemeContent\images\manchester.jpg" Url="ThemeContent/images/manchester.jpg" ReplaceContent="TRUE" />
+    <File Path="ThemeContent\scripts\atos.js" Url="ThemeContent/scripts/atos.js" ReplaceContent="TRUE" />
+    <File Path="ThemeContent\theme\Atos.spcolor" Url="ThemeContent/theme/Atos.spcolor" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

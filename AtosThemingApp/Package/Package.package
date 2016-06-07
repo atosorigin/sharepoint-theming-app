@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="d5ebe2f0-f2bb-492b-9e72-5c1222e058c6" 
+        solutionId="d5ebe2f0-f2bb-492b-9e72-5c1222e058c6" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="AtosThemingApp"
+        sharePointProductVersion="16.0">
+  <features>
+        <featureReference itemId="b2b45eba-e5eb-4132-a659-847bb5ee0ddf" />
+  </features>
+</package>
