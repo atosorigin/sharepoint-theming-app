@@ -6,4 +6,4 @@ This repo contains the source code for an app that styles a SharePoint (2013 and
 The project deploys the branding completely using JSOM. There's no server side code. This means everything runs from the browser and doesn't require any additional servers or resources, SharePoint will host the app for you (provided your environment has been set-up to be app-enabled.
 
 ### Installation guide
-Installation is as easy as adding the app package to your app catalog; deploying it to a site and hitting the button. It might take a  minute or two to get everything deployed.
+Installation is as easy as publishing, adding the app package to your app catalog; deploying it to a site and hitting the button. It might take a  minute or two to get everything deployed. For scenarios in which you have a site provisioning process, I would recommend not using this app but including the branding bits and pieces in your site deployment. Use a provisioning engine such as [SPMeta2](https://github.com/SubPointSolutions/spmeta2) or [PnP]() to do so.
