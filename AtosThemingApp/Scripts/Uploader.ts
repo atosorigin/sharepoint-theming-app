@@ -1,12 +1,11 @@
 ﻿namespace Atos.SharePoint {
 
-    enum Status {
-        ERROR,
-        WARNING,
-        SUCCESS
-    }
-
     export type IUploadTarget = [string, string];
+
+    /**
+     * Credits for the uploader code go to:
+     * https://github.com/OfficeDev/PnP-Guidance/blob/master/articles/Bulk-upload-documents-sample-app-for-SharePoint.md
+     */
 
     export class Uploader {
         hostWebContext: SP.ClientContext;
@@ -55,62 +54,38 @@
                         var fileName: string = Utils.getFilenameFromUrl(targetPath);
                         var folder: string = Utils.getPathFromUrl(targetPath);
 
-                        //logMessage("Create file at<br>    " + hostWebUrl + "/" + folder + fileName, state.SUCCESS);
-
-                        // Create new file
+                        // new FileCreationInformation object for uploading the file
                         var createInfo = new SP.FileCreationInformation();
-
-                        // Convert ArrayBuffer to Base64 string
                         createInfo.set_content(Utils.arrayBufferToBase64(contents));
-
-                        // Overwrite if already exists
                         createInfo.set_overwrite(true);
-
-                        // set target url
                         createInfo.set_url(fileName);
 
                         var targetFolder = Utils.getRelativeUrlFromAbsolute(this.hostWebUrl) + folder;
 
                         // ensure the target folder has been created 
                         this.ensureTargetFolder(Utils.getRelativeUrlFromAbsolute(this.hostWebUrl), folder).then((folder) => {
-                            // retrieve file collection of folder
+
+                            // add file to the folder
                             var files = folder.get_files();
-
-                            // load file collection from host web
                             this.hostWebContext.load(files);
-
-                            // add the new file
                             files.add(createInfo);
 
                             // upload file
                             this.hostWebContext.executeQueryAsync(() => {
-
                                 deferred.resolve();
-
                                 var loadImage = this.hostWebUrl + "/" + folder + fileName;
-                                //logMessage("File uploaded succeeded", state.SUCCESS);
-                                //logMessage("<b>Try to embed file from host web</b><br><br>", state.SUCCESS);
-                                //logMessage("<img src='" + loadImage + "'>", state.SUCCESS);
-                                //logMessage("<a href='" + loadImage + "' target='_blank'>" + folder + fileName + "</a>", state.SUCCESS);
-                                //logMessage("<b>File was successfully uploaded as binary file<br>Image can be loaded successfully.</b>", state.SUCCESS);
-
                             }, (sender, args) => {
                                 deferred.reject();
-                                //logMessage("File upload failed " + args.get_message(), state.ERROR);
-
                             });
                         });;
                     }).fail((jqXHR, textStatus) => {
                         deferred.reject();
-                        //logMessage(textStatus, state.ERROR);
-                        //logMessage("File '" + appWebUrl + sourcePath + "' failed.<br>" + textStatus);
                     });
 
                 },
                 // in case of error
                 (sender, args) => {
                     deferred.reject();
-                    //logMessage(args.get_message(), state.ERROR);
                 });
 
             return deferred.promise();
